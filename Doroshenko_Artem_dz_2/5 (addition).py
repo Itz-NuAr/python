@@ -1,15 +1,9 @@
-def narcissistic( value ):
-    snum = str(value)
-    digit = len(snum)
-    summa = 0
-    print(snum, digit)
-    for i in range(digit):
-        num = (int(snum[i]))**digit
-        print(num)
-        summa += num
-    if value == num:
-        return True
-    else:
-        return False
-narcissistic(371)
+import random
+
+amount = random.randint(10, 20)
+items = []
+for i in range(0, amount - 1):
+    price = round(random.uniform(0, 200), 2)
+    items.append(price)
+print(items)
 
